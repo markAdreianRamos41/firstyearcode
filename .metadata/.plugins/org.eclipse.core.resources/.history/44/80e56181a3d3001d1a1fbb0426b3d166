@@ -1,0 +1,45 @@
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.*;
+
+public class Main extends JFrame{
+
+	JLabel title = new JLabel("HOTEL REGISTRATION FORM");
+	ImageIcon backgroundImage = new ImageIcon("image\\background.png");
+	JPanel formContainer = new JPanel();
+	JLabel imageContainer = new JLabel(backgroundImage);
+	
+	
+	Main(){
+		
+		title.setFont(new Font("Montserrat", Font.BOLD, 48));
+		
+		formContainer.setBounds(81, 90, 601, 553);
+		formContainer.setLayout(null);
+		formContainer.setBackground(Color.red);
+		
+		formContainer.add(title);
+		title.setBounds(0, 0, 601, 553);
+		
+		imageContainer.setBounds(765, 0, 501, 768);
+		
+		setSize(1266, 768);
+		setLayout(null);
+		setLocationRelativeTo(null);
+		
+		add(formContainer);
+		add(imageContainer);
+		
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+		
+		
+		
+	}
+
+}

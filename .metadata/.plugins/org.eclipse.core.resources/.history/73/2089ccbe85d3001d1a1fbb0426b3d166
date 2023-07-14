@@ -1,0 +1,31 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class Main extends JFrame{
+	static JButton button;
+	
+	Main(){
+		setSize(1266, 768);
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+		
+		button = new JButton("dawdawd");
+		
+		int value = 10;
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(value);
+				
+			}
+			
+		});
+		
+	}
+
+}

@@ -1,0 +1,122 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Insets;
+
+import javax.swing.*;
+
+public class Main extends JFrame{
+
+	JLabel title = new JLabel("HOTEL REGISTRATION FORM");
+	ImageIcon backgroundImage = new ImageIcon("image\\background.png");
+	JPanel formContainer = new JPanel();
+	JLabel imageContainer = new JLabel(backgroundImage);
+	
+	Color mainColor = new Color(0x3c68b1);
+	Font textFieldLabelFont = new Font("Montserat", Font.ITALIC, 36);
+	
+	JTextField firstNameTextField = new JTextField();
+	JLabel firstNameLabel = new JLabel("Firstname");
+	JTextField lastNameTextField = new JTextField();
+	JLabel lastNameLabel = new JLabel("Lastname");
+	
+	JTextField emailTextField = new JTextField();
+	JLabel emailLabel = new JLabel("Email");
+	JTextField phoneNumberTextField = new JTextField();
+	JLabel phoneNumberLabel = new JLabel("Phone Number");
+	
+	JTextField arrivalDateTextField = new JTextField();
+	JLabel arrivalDateLabel = new JLabel("Arival Date (mm/dd/yy)");
+	JTextField arrivalTimeTextField = new JTextField();
+	JLabel arrivalTimeLabel = new JLabel("Time (Hour Minutes 10:00)");
+	
+	Main(){
+		
+		//First name text field with label
+		firstNameTextField.setBounds(0, 102, 283, 25);
+		firstNameLabel.setBounds(0, 75, 68, 14);
+		applyStyle(firstNameTextField);
+		
+		
+		//Last name text field with label
+		lastNameTextField.setBounds(316 , 102, 283, 25);
+		lastNameLabel.setBounds(316 , 75, 68, 14);
+		applyStyle(lastNameTextField);
+		
+		//Email name text field with label
+		emailTextField.setBounds(0, 163, 283, 25);
+		emailLabel.setBounds(0, 138, 68, 14);
+		applyStyle(emailTextField);
+				
+				
+		//Last name text field with label
+		phoneNumberTextField.setBounds(316 , 163, 283, 25);
+		phoneNumberLabel.setBounds(316 , 138, 100, 14);
+		applyStyle(phoneNumberTextField);
+		
+		
+		//Arrival date name text field with label
+		arrivalDateTextField.setBounds(0, 163, 283, 25);
+		arrivalDateLabel.setBounds(0, 138, 68, 14);
+		applyStyle(arrivalDateTextField);
+						
+						
+		//Arrival time text field with label
+		arrivalTimeTextField.setBounds(316 , 163, 283, 25);
+		arrivalTimeLabel.setBounds(316 , 138, 100, 14);
+		applyStyle(arrivalTimeTextField);
+				
+		
+		
+		
+		
+		
+		
+		title.setFont(new Font("Montserrat", Font.BOLD, 36));
+		title.setForeground(mainColor);
+		title.setBounds(0, 0, 601, 39);
+		
+		formContainer.setBounds(81, 90, 601, 553);
+		formContainer.setLayout(null);
+		formContainer.setBackground(new Color(0xffffff));
+		formContainer.add(title);
+		
+		formContainer.add(firstNameLabel);
+		formContainer.add(firstNameTextField);
+		formContainer.add(lastNameLabel);
+		formContainer.add(lastNameTextField);
+		
+		formContainer.add(emailLabel);
+		formContainer.add(emailTextField);
+		formContainer.add(phoneNumberLabel);
+		formContainer.add(phoneNumberTextField);
+		
+		formContainer.add(arrivalDateLabel);
+		formContainer.add(arrivalDateTextField);
+		formContainer.add(arrivalTimeLabel);
+		formContainer.add(arrivalTimeTextField);
+		
+		
+		imageContainer.setBounds(765, 0, 501, 768);
+		setSize(1266, 768);
+		setLayout(null);
+		setLocationRelativeTo(null);
+		getContentPane().setBackground(new Color(0xffffff));
+		add(formContainer);
+		add(imageContainer);
+		
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+		
+		
+		
+	}
+	
+	public void applyStyle(JTextField textField) {
+		textField.setBorder(BorderFactory.createLineBorder(mainColor));
+	}
+
+}

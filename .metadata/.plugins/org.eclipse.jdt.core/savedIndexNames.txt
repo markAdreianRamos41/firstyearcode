@@ -1,0 +1,22 @@
+INDEX VERSION 1.131+C:\Users\Admin\Documents\School\2nd Sem\CCS103 - Computer Programming\SchoolWorkspace\.metadata\.plugins\org.eclipse.jdt.core
+1019955088.index
+1390851051.index
+3990820365.index
+1971176781.index
+2738486780.index
+3154710973.index
+3555284584.index
+1548144846.index
+2016252219.index
+3359518205.index
+623834795.index
+2707040146.index
+2441938283.index
+1048350443.index
+1855002127.index
+2291337102.index
+2527712492.index
+4196053683.index
+1242887823.index
+1865797976.index
+3035830925.index

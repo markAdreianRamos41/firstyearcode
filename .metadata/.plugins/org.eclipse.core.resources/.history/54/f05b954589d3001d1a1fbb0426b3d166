@@ -1,0 +1,35 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class Main extends JFrame{
+	JButton button;
+	
+	Main(){
+		setSize(1266, 768);
+		setLocationRelativeTo(null);
+	
+		
+		button = new JButton("dawdawd");
+		button.setBounds(100, 100, 200, 300);
+		add(button);
+		setVisible(true);
+		JLabel label = new JLabel("dawd");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(label.getText());
+				
+			}
+			
+		});
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+		
+		
+		
+	}
+
+}

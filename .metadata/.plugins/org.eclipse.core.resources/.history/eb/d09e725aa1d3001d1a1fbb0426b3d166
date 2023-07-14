@@ -1,0 +1,22 @@
+import javax.swing.*;
+
+public class Main extends JFrame{
+
+	JLabel title = new JLabel("HOTEL REGISTRATION FORM");
+	Main(){
+		
+		setSize(1266, 768);
+		setLayout(null);
+		setLocationRelativeTo(null);
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+		
+		
+		
+	}
+
+}
